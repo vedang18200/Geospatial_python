@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 300px;
+            background-color: #0d1117;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin: 0 0 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a.active {
+            background-color: #3a3a3a;
+            color: #ffffff;
+            font-weight: bold;
+            border: 2px solid #ffffff;
+        }
+
+        /* Main container */
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Map container */
+        #map {
+            width: 70%;
+            height: 100%;
+        }
+
+        /* Right sidebar for layer controls */
+        .right-sidebar {
+            width: 30%;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .right-sidebar h3 {
+            margin: 0 0 20px;
+        }
+
+        .right-sidebar label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .right-sidebar input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#" class="active">Timelapse</a></li>
+            <li><a href="#">U.S. Housing</a></li>
+            <li><a href="#">Split Map</a></li>
+            <li><a href="#">Heatmap</a></li>
+            <li><a href="#">Marker Cluster</a></li>
+            <li><a href="#">Basemaps</a></li>
+        </ul>
+        <div class="about">
+            <h3>About</h3>
+            <p>Web App URL: <a href="#">streamlit.gishub.org</a></p>
+            <p>GitHub repository: <a href="#">GitHub</a></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Map Section -->
+        <div id="map"></div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <h3>Map Layers</h3>
+            <label>
+                <input type="checkbox" id="country-layer" checked>
+                Country
+            </label>
+            <label>
+                <input type="checkbox" id="state-layer" checked>
+                State
+            </label>
+            <label>
+                <input type="checkbox" id="district-layer" checked>
+                District
+            </label>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([22.9734, 78.6569], 5); // Centered on India
+
+        // Add a tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Layer groups for country, state, and district
+        var countryLayer = L.layerGroup();
+        var stateLayer = L.layerGroup();
+        var districtLayer = L.layerGroup();
+
+        // Load GeoJSON files
+        fetch('{% static "data/india.geojson" %}') // Replace with your country GeoJSON path
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: {
+                        color: '#007acc',
+                        weight: 2
+                    }
+                }).addTo(countryLayer);
+            });
+
+        fetch('{% static "data/sates.geojson" %}') // Replace with your state GeoJSON path
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: {
+                        color: '#00cc44',
+                        weight: 1.5
+                    }
+                }).addTo(stateLayer);
+            });
+
+        fetch('{% static "data/map.geojson" %}') // Replace with your district GeoJSON path
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: {
+                        color: '#cc4444',
+                        weight: 1
+                    }
+                }).addTo(districtLayer);
+            });
+
+        // Add layers to the map by default
+        countryLayer.addTo(map);
+        stateLayer.addTo(map);
+        districtLayer.addTo(map);
+
+        // Layer toggle logic
+        document.getElementById('country-layer').addEventListener('change', function(e) {
+            if (e.target.checked) {
+                countryLayer.addTo(map);
+            } else {
+                map.removeLayer(countryLayer);
+            }
+        });
+
+        document.getElementById('state-layer').addEventListener('change', function(e) {
+            if (e.target.checked) {
+                stateLayer.addTo(map);
+            } else {
+                map.removeLayer(stateLayer);
+            }
+        });
+
+        document.getElementById('district-layer').addEventListener('change', function(e) {
+            if (e.target.checked) {
+                districtLayer.addTo(map);
+            } else {
+                map.removeLayer(districtLayer);
+            }
+        });
+    </script>
+</body>
+</html>

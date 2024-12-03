@@ -1,0 +1,38 @@
+/* For the map container */
+.map-container {
+    display: flex;
+    height: 600px;
+    margin-top: 20px;
+}
+
+/* Map area */
+#map {
+    flex: 2;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-color: #333;
+}
+
+/* Right sidebar for layer controls */
+.right-sidebar {
+    flex: 1;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.right-sidebar h3 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.right-sidebar label {
+    display: block;
+    margin: 10px 0;
+    color: white;
+}
+
+.right-sidebar input[type="checkbox"] {
+    margin-right: 10px;
+}
