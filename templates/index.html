@@ -5,44 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geospatial Applications</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="sidebar">
-        <h2>Spaces</h2>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="/map">Indian Map</a></li>
-            <li><a href="/rainfall_analysis">Rainfall Analysis</a></li>
-            <li><a href="#">Split Map</a></li>
-            <li><a href="#">Heatmap</a></li>
-            <li><a href="#">Marker Cluster</a></li>
-            <li><a href="#">Basemaps</a></li>
-        </ul>
-        
-        <div class="about">
-            <h3>About</h3>
-            <p>Web App URL: <a href="#">streamlit.gishub.org</a></p>
-            <p>GitHub repository: <a href="#">GitHub</a></p>
+<body class="flex h-screen bg-gray-100">
+    <!-- Sidebar -->
+    <div class="w-1/5 bg-gray-900 text-white flex flex-col justify-between p-6">
+        <div>
+            <h2 class="text-2xl font-bold mb-6">Spaces</h2>
+            <ul class="space-y-2">
+                <li>
+                    <a href="#" class="block px-3 py-2 rounded-md bg-blue-700">Home</a>
+                </li>
+                <li>
+                    <a href="/map" class="block px-3 py-2 rounded-md hover:bg-blue-800">Indian Map</a>
+                </li>
+                <li>
+                    <a href="/rainfall_analysis" class="block px-3 py-2 rounded-md hover:bg-blue-800">Rainfall Analysis</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 py-2 rounded-md hover:bg-blue-800">Split Map</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 py-2 rounded-md hover:bg-blue-800">Heatmap</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 py-2 rounded-md hover:bg-blue-800">Marker Cluster</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 py-2 rounded-md hover:bg-blue-800">Basemaps</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-2">About</h3>
+            <p class="text-sm text-gray-300 mb-2">
+                Web App URL: <a href="#" class="text-blue-400 hover:underline">streamlit.gishub.org</a>
+            </p>
+            <p class="text-sm text-gray-300">
+                GitHub repository: <a href="#" class="text-blue-400 hover:underline">GitHub</a>
+            </p>
         </div>
     </div>
 
-    <div class="content">
-        <h1>Streamlit for Geospatial Applications</h1>
-        <p>This multi-page web app demonstrates various interactive web apps created using Django and open-source mapping libraries.</p>
+    <!-- Content -->
+    <div class="flex-1 p-10 bg-white overflow-auto">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Streamlit for Geospatial Applications</h1>
+        <p class="text-gray-600 mb-6">
+            This multi-page web app demonstrates various interactive web apps created using Django and open-source mapping libraries.
+        </p>
 
-        <h2>Timelapse of Satellite Imagery</h2>
-        <div class="image-grid">
-            <div>
-                <img src="{% static 'img/giphy.gif' %}" alt="Satellite 1">
-                <p>Parc Natural del Delta, Spain</p>
+        <h2 class="text-2xl font-semibold text-blue-600 mb-4">Timelapse of Satellite Imagery</h2>
+        <div class="grid grid-cols-2 gap-6">
+            <!-- First Image -->
+            <div class="bg-gray-100 p-4 rounded-md shadow-md text-center">
+                <img src="{% static 'img/giphy.gif' %}" alt="Satellite 1" class="w-full h-auto rounded-md mb-4">
+                <p class="text-gray-700 text-sm">Parc Natural del Delta, Spain</p>
             </div>
-            <div>
-                <img src="{% static 'images/satellite2.jpg' %}" alt="Satellite 2">
-                <p>Earth Weather</p>
+            <!-- Second Image -->
+            <div class="bg-gray-100 p-4 rounded-md shadow-md text-center">
+                <img src="{% static 'images/satellite2.jpg' %}" alt="Satellite 2" class="w-full h-auto rounded-md mb-4">
+                <p class="text-gray-700 text-sm">Earth Weather</p>
             </div>
         </div>
-        <p>Click on the sidebar to explore more applications.</p>
+        <p class="text-gray-600 mt-6">Click on the sidebar to explore more applications.</p>
     </div>
 </body>
 </html>

@@ -1,15 +1,10 @@
-/* For the map container */
-.map-container {
-    display: flex;
-    height: 600px;
-    margin-top: 20px;
-}
 
 /* Map area */
 #map {
     flex: 2;
     border-radius: 8px;
     margin-right: 10px;
+    height: 80vh;
     background-color: #333;
 }
 

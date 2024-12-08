@@ -19,8 +19,8 @@ def rainfall_analysis(request):
 
     # Example Rainfall Data
     rainfall_data = pd.DataFrame({
-        'district': ['Bihar', 'Haryana', 'Assam', 'Maharashtra'],  # Replace with actual district names
-        'rainfall': [20000, 30000, 15000, 25000]  # Rainfall in mm
+        'district': ['Bihar', 'Haryana', 'Assam', 'Maharashtra','AndamanandNicobar','AndhraPradesh'], 
+        'rainfall': [20000, 30000, 15000, 25000,35000,45000,]  
     })
 
     # Merge data

@@ -1,139 +1,226 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indian Map</title>
-    <link rel="stylesheet" href="{% static 'css/map.css' %}"> <!-- Link to the landing page's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/map.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
     <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>Spaces</h2>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#" class="active">Indian Map</a></li>
-            <li><a href="/rainfall_analysis">Rainfall Analysis</a></li>
-            <li><a href="#">Split Map</a></li>
-            <li><a href="#">Heatmap</a></li>
-            <li><a href="#">Marker Cluster</a></li>
-            <li><a href="#">Basemaps</a></li>
+    <div class="flex flex-row h-screen">
+      <div class="bg-blue-900 text-white w-1/5 p-6 space-y-6">
+        <h2 class="text-2xl font-bold">Spaces</h2>
+        <ul class="space-y-2">
+          <li>
+            <a
+              href="/"
+              class="block text-lg hover:bg-blue-800 rounded-md px-3 py-2"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block text-lg bg-blue-700 rounded-md px-3 py-2"
+              >Indian Map</a
+            >
+          </li>
+          <li>
+            <a
+              href="/rainfall_analysis"
+              class="block text-lg hover:bg-blue-800 rounded-md px-3 py-2"
+              >Rainfall Analysis</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-lg hover:bg-blue-800 rounded-md px-3 py-2"
+              >Split Map</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-lg hover:bg-blue-800 rounded-md px-3 py-2"
+              >Heatmap</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-lg hover:bg-blue-800 rounded-md px-3 py-2"
+              >Marker Cluster</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-lg hover:bg-blue-800 rounded-md px-3 py-2"
+              >Basemaps</a
+            >
+          </li>
         </ul>
-        <div class="about">
-            <h3>About</h3>
-            <p>Web App URL: <a href="#">streamlit.gishub.org</a></p>
-            <p>GitHub repository: <a href="#">GitHub</a></p>
+        <div>
+          <h3 class="text-xl font-semibold">About</h3>
+          <p class="mt-2 text-sm">
+            Web App URL:
+            <a href="#" class="text-blue-300 hover:underline"
+              >streamlit.gishub.org</a
+            >
+          </p>
+          <p class="mt-2 text-sm">
+            GitHub repository:
+            <a href="#" class="text-blue-300 hover:underline">GitHub</a>
+          </p>
         </div>
-    </div>
+      </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <h1>Indian Map</h1>
-        <p>Explore the interactive Indian map with layers for country, state, and district boundaries.</p>
-        
-        <div class="map-container">
-            <!-- Map Section -->
-            <div id="map"></div>
+      <!-- Main Content -->
+      <div class="flex-1 p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Indian Map</h1>
+        <p class="text-gray-600 mb-6">
+          Explore the interactive Indian map with layers for country, state, and
+          district boundaries.
+        </p>
 
-            <!-- Right Sidebar -->
-            <div class="right-sidebar">
-                <h3>Map Layers</h3>
-                <label>
-                    <input type="checkbox" id="country-layer" checked>
-                    Country
-                </label>
-                <label>
-                    <input type="checkbox" id="state-layer" checked>
-                    State
-                </label>
-                <label>
-                    <input type="checkbox" id="district-layer" checked>
-                    District
-                </label>
+        <div class="flex h-[1000px]">
+          <!-- Map Section -->
+          <div
+            id="map"
+            class="w-3/4 h-[1000px] rounded-md shadow-lg border"
+          ></div>
+
+          <!-- Right Sidebar -->
+          <div class="w-1/4 pl-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Map Layers</h3>
+            <div class="space-y-4">
+              <label class="flex items-center space-x-3">
+                <input
+                  type="checkbox"
+                  id="country-layer"
+                  checked
+                  class="form-checkbox h-5 w-5 text-blue-600"
+                />
+                <span class="text-gray-700">Country</span>
+              </label>
+              <label class="flex items-center space-x-3">
+                <input
+                  type="checkbox"
+                  id="state-layer"
+                  checked
+                  class="form-checkbox h-5 w-5 text-green-600"
+                />
+                <span class="text-gray-700">State</span>
+              </label>
+              <label class="flex items-center space-x-3">
+                <input
+                  type="checkbox"
+                  id="district-layer"
+                  checked
+                  class="form-checkbox h-5 w-5 text-red-600"
+                />
+                <span class="text-gray-700">District</span>
+              </label>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Initialize the map
-        var map = L.map('map').setView([22.9734, 78.6569], 5); // Centered on India
+      // Initialize the map
+      var map = L.map("map").setView([22.9734, 78.6569], 5); // Centered on India
 
-        // Add a tile layer (OpenStreetMap)
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+      // Add a tile layer (OpenStreetMap)
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
 
-        // Layer groups for country, state, and district
-        var countryLayer = L.layerGroup();
-        var stateLayer = L.layerGroup();
-        var districtLayer = L.layerGroup();
+      // Layer groups for country, state, and district
+      var countryLayer = L.layerGroup();
+      var stateLayer = L.layerGroup();
+      var districtLayer = L.layerGroup();
 
-        // Load GeoJSON files
-        fetch('{% static "data/india.geojson" %}') // Replace with your country GeoJSON path
-            .then(response => response.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    style: {
-                        color: '#007acc',
-                        weight: 2
-                    }
-                }).addTo(countryLayer);
-            });
-
-        fetch('{% static "data/simplified_geojson.geojson" %}') // Replace with your state GeoJSON path
-            .then(response => response.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    style: {
-                        color: '#00cc44',
-                        weight: 1.5
-                    }
-                }).addTo(stateLayer);
-            });
-
-        fetch('{% static "data/map.geojson" %}') // Replace with your district GeoJSON path
-            .then(response => response.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    style: {
-                        color: '#cc4444',
-                        weight: 1
-                    }
-                }).addTo(districtLayer);
-            });
-
-        // Add layers to the map by default
-        countryLayer.addTo(map);
-        stateLayer.addTo(map);
-        districtLayer.addTo(map);
-
-        // Layer toggle logic
-        document.getElementById('country-layer').addEventListener('change', function(e) {
-            if (e.target.checked) {
-                countryLayer.addTo(map);
-            } else {
-                map.removeLayer(countryLayer);
-            }
+      // Load GeoJSON files
+      fetch('{% static "data/india_map.geojson" %}') 
+        .then((response) => response.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            style: {
+              color: "#007acc",
+              weight: 2,
+            },
+          }).addTo(countryLayer);
         });
 
-        document.getElementById('state-layer').addEventListener('change', function(e) {
-            if (e.target.checked) {
-                stateLayer.addTo(map);
-            } else {
-                map.removeLayer(stateLayer);
-            }
+      fetch('{% static "data/simplified_geojson.geojson" %}') 
+        .then((response) => response.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            style: {
+              color: "#00cc44",
+              weight: 1.5,
+            },
+          }).addTo(stateLayer);
         });
 
-        document.getElementById('district-layer').addEventListener('change', function(e) {
-            if (e.target.checked) {
-                districtLayer.addTo(map);
-            } else {
-                map.removeLayer(districtLayer);
-            }
+      fetch('{% static "data/map.geojson" %}') 
+        .then((response) => response.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            style: {
+              color: "#cc4444",
+              weight: 1,
+            },
+          }).addTo(districtLayer);
+        });
+
+      // Add layers to the map by default
+      countryLayer.addTo(map);
+      stateLayer.addTo(map);
+      districtLayer.addTo(map);
+
+      // Layer toggle logic
+      document
+        .getElementById("country-layer")
+        .addEventListener("change", function (e) {
+          if (e.target.checked) {
+            countryLayer.addTo(map);
+          } else {
+            map.removeLayer(countryLayer);
+          }
+        });
+
+      document
+        .getElementById("state-layer")
+        .addEventListener("change", function (e) {
+          if (e.target.checked) {
+            stateLayer.addTo(map);
+          } else {
+            map.removeLayer(stateLayer);
+          }
+        });
+
+      document
+        .getElementById("district-layer")
+        .addEventListener("change", function (e) {
+          if (e.target.checked) {
+            districtLayer.addTo(map);
+          } else {
+            map.removeLayer(districtLayer);
+          }
         });
     </script>
-</body>
+  </body>
 </html>

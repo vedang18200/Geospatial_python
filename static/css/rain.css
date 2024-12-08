@@ -1,0 +1,30 @@
+/* Sidebar */
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+aside nav a {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+}
+
+aside nav a:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+aside nav a.font-semibold {
+    background-color: #2563eb;
+}
+
+/* Map container */
+#map-container {
+    height: 90vh; 
+    width: 100%;
+   background-color: #333;
+}

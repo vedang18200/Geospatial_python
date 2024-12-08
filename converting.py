@@ -2,8 +2,8 @@ import json
 from shapely.geometry import shape, mapping, MultiPolygon
 
 # Load the GeoJSON file
-input_file = "static\data\sates.geojson"  # Replace with your file path
-output_file = "simplified_geojson.geojson"
+input_file = "static\data\map.geojson"  # Replace with your file path
+output_file = "district.geojson"
 
 with open(input_file, 'r', encoding='utf-8') as file:
     geojson_data = json.load(file)
