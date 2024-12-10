@@ -67,6 +67,13 @@ CHANNEL_LAYERS = {
 
 ROOT_URLCONF = 'geospatial.urls'
 
+
+import os
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 import os 
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates/')
 
