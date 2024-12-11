@@ -114,36 +114,47 @@ def heatmap(request):
 
 
 
+import geopandas as gpd
+import pandas as pd
+import pydeck as pdk
+from django.shortcuts import render
+
 def bussiness(request):
-     # Load GeoJSON file
+    # Paths to GeoJSON and CSV files
     geojson_path = 'V:/Geospatial/static/data/simplified_geojson.geojson'
+    csv_path = 'V:/Geospatial/static/data/Dmart.csv'
+
+    # Load GeoJSON and CSV
     districts = gpd.read_file(geojson_path)
+    sales_data = pd.read_csv(csv_path)
 
-    csv_path = 'V:/Geospatial/static/data/bussiness.csv'
-    rainfall_data = pd.read_csv(csv_path)
+    # Merge GeoJSON with CSV on state name
+    districts = districts.merge(sales_data, left_on='NAME_1', right_on='state', how='inner')
 
-    # Merge data
-    districts = districts.merge(rainfall_data, left_on='NAME_1', right_on='state', how='inner')
-
-    # Prepare data for Pydeck
+    # Calculate centroids for longitude and latitude
     districts['centroid'] = districts.geometry.centroid
     districts['lon'] = districts.centroid.x
     districts['lat'] = districts.centroid.y
-    data = districts[['state', 'sales', 'lon', 'lat']]
 
-    # Create Pydeck layer for 3D bar
+    # Prepare data for Pydeck
+    data = districts[['state', 'sales', 'trending', 'lon', 'lat']]
+
+    # Create Pydeck layer for 3D columns
     layer = pdk.Layer(
         "ColumnLayer",
         data=data,
         get_position=["lon", "lat"],
         get_elevation="sales",
-        elevation_scale=0.0001,
+        elevation_scale=0.00001,
         radius=30000,
         get_fill_color="[255, 140, 0, 200]",  
         pickable=True,
     )
 
-    # View
+    # Add tooltip for state, sales, and trending product
+    tooltip = {"html": "<b>{state}</b><br>Sales: ₹{sales}<br>Trending: {trending}"}
+
+    # Set initial view state
     view_state = pdk.ViewState(
         latitude=20.5937, longitude=78.9629, zoom=4, pitch=45
     )
@@ -152,11 +163,11 @@ def bussiness(request):
     deck = pdk.Deck(
         layers=[layer],
         initial_view_state=view_state,
-       tooltip={"text": "{state}: ₹{sales}"}
+        tooltip=tooltip
     )
     map_html = deck.to_html(as_string=True) 
 
-    # Pass the HTML to the template
+    # Pass map HTML to template
     return render(request, 'Bussiness.html', {'map_html': map_html})
 
 
