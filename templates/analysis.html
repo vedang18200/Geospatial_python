@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Analysis</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Container -->
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mt-10">
+
+        <!-- Heading -->
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Agricultural Analysis for {{ state }}</h1>
+
+        <!-- Data Display -->
+        <div class="space-y-4">
+            <div class="flex justify-between text-gray-700 text-lg">
+                <span><strong>Water Quality:</strong></span>
+                <span>{{ water_quality }}</span>
+            </div>
+            <div class="flex justify-between text-gray-700 text-lg">
+                <span><strong>Soil Quality:</strong></span>
+                <span>{{ soil_quality }}</span>
+            </div>
+            <div class="flex justify-between text-gray-700 text-lg">
+                <span><strong>Air Quality:</strong></span>
+                <span>{{ air_quality }}</span>
+            </div>
+        </div>
+
+        <!-- Recommended Crops -->
+        <h2 class="text-2xl font-semibold mt-6 text-gray-800">Recommended Crops:</h2>
+        {% if recommended_crops %}
+            <ul class="list-disc pl-5 text-gray-700">
+                {% for crop in recommended_crops %}
+                    <li>{{ crop }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-gray-500 mt-2">No recommended crops found for this state.</p>
+        {% endif %}
+
+        <!-- Back Button -->
+        <div class="mt-6 text-center">
+            <a href="{% url 'agriculture_map' %}" class="bg-blue-600 text-white px-6 py-2 rounded-lg text-lg hover:bg-blue-700 transition duration-300">Back to Map</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Comparison</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Page Container -->
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+
+        <!-- Header Section -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-6">Comparison of Real Estate Prices</h1>
+
+        <!-- State Comparison Details -->
+        <div class="text-lg text-gray-700 mb-4">
+            <p><strong class="font-semibold text-gray-900">State 1:</strong> {{ state1 }}</p>
+            <p><strong class="font-semibold text-gray-900">State 2:</strong> {{ state2 }}</p>
+        </div>
+
+        <!-- Price Differences -->
+        <div class="text-lg text-gray-700 mb-6">
+            <p><strong class="font-semibold text-gray-900">House Price Difference:</strong> ₹{{ house_price_diff }}</p>
+            <p><strong class="font-semibold text-gray-900">Rent Price Difference:</strong> ₹{{ rent_price_diff }}</p>
+        </div>
+
+        <!-- Back to Map Button -->
+        <a href="{% url 'realestate_map' %}" class="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition duration-300">Back to Map</a>
+        
+    </div>
+</body>
+</html>

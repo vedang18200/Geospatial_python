@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dmart Sales Plotting</title>
+    <title>Real Estate Price Visualization</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -15,28 +15,27 @@
 
     <!-- Sidebar -->
     <aside class="w-1/4 bg-blue-900 text-white h-screen flex flex-col">
-        <div class="p-6 font-bold text-2xl border-b border-blue-700">Spaces</div>
+        <div class="p-6 font-bold text-2xl border-b border-blue-700">Real Estate</div>
         <nav class="flex flex-col p-6 space-y-6">
             <a href="/" class="text-gray-300 hover:text-white transition duration-200">Home</a>
             <a href="/map" class="text-gray-300 hover:text-white transition duration-200">Indian Map</a>
             <a href="/rainfall_analysis" class="text-gray-300 hover:text-white transition duration-200">Rainfall Analysis</a>
             <a href="/hmap" class="text-gray-300 hover:text-white transition duration-200">Heatmap</a>
             <a href="/heatmap" class="text-gray-300 hover:text-white transition duration-200">Live Temperature</a>
-            <a href="/bussiness" class="text-white font-semibold">Business Plot</a>
-            <a href="/realestate_map" class="text-gray-300 hover:text-white transition duration-200">Realestate Map</a>
+            <a href="/bussiness" class="text-gray-300 hover:text-white transition duration-200">Business Plot</a>
+            <a href="/realestate_map" class="text-white font-semibold">Realestate Map</a>
             <a href="/agriculture_map" class="text-gray-300 hover:text-white transition duration-200">Agriculture Map</a>
+        </nav>
         </nav>
     </aside>
 
     <!-- Main Content -->
     <main class="flex-1 p-6 bg-gray-100 overflow-auto">
-        <h1 class="text-4xl font-bold text-gray-800 mb-6">Business Sales Visualization</h1>
-        <p class="text-lg text-gray-600 mb-6">
-            Explore the 3D map visualization of Dmart's sales in India.
-        </p>
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">Real Estate Price Visualization</h1>
+        <p class="text-lg text-gray-600 mb-6">Compare real estate prices in different states.</p>
 
         <!-- State Comparison Form -->
-        <form method="POST" action="{% url 'compare_states' %}" class="mb-6">
+        <form method="POST" action="{% url 'compare_realestate' %}" class="mb-6">
             {% csrf_token %}
             <div class="flex space-x-4">
                 <div>
@@ -58,22 +57,12 @@
             </div>
             <button type="submit" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Compare</button>
         </form>
-        
-        <!-- 3D Map -->
-        <div class="flex">
-            <div id="map-container" class="rounded-lg shadow-lg border bg-white w-full max-w-4xl h-[400px]">
-                {{ map_html|safe }}
-            </div>
+
+        <!-- Map Visualization -->
+        <div id="map-container" class="rounded-lg shadow-lg border bg-white w-full max-w-4xl h-[400px] mb-6">
+            {{ map_html|safe }}
         </div>
 
-        <!-- Comparison Chart -->
-        <div id="comparison-chart" class="mt-6 bg-white rounded-lg shadow-lg p-4">
-            {% if plot_div %}
-                {{ plot_div|safe }}
-            {% else %}
-                <p class="text-gray-600">Select two states to view the comparison chart.</p>
-            {% endif %}
-        </div>
     </main>
 </body>
 </html>

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Comparison</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-gray-50 p-6">
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">Comparison of Sales</h1>
+        <p class="text-lg text-gray-600 mb-6">
+            Comparison between <strong>{{ state1 }}</strong> and <strong>{{ state2 }}</strong>.
+        </p>
+        <div id="comparison-chart" class="bg-white rounded-lg shadow-lg p-4">
+            {{ plot_div|safe }}
+        </div>
+        <a href="/bussiness" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Back to Sales Visualization</a>
+    </div>
+</body>
+</html>

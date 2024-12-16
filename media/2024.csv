@@ -1,0 +1,1001 @@
+states,temperature
+Nagaland,22
+Nagaland,27
+Maharashtra,30
+Sikkim,36
+Kerala,33
+Bihar,36
+Goa,27
+Gujarat,39
+Tamil Nadu,32
+Manipur,41
+Andhra Pradesh,32
+Manipur,35
+Punjab,17
+Rajasthan,28
+Sikkim,38
+Nagaland,39
+Goa,35
+Karnataka,28
+Andhra Pradesh,37
+Odisha,30
+Assam,37
+Jharkhand,42
+Jharkhand,20
+Gujarat,20
+Jharkhand,22
+Tripura,27
+Punjab,32
+Manipur,23
+Uttar Pradesh,40
+Mizoram,21
+Madhya Pradesh,29
+Jharkhand,19
+Bihar,28
+Uttar Pradesh,26
+Maharashtra,37
+Karnataka,30
+Manipur,34
+Goa,33
+Rajasthan,17
+Karnataka,30
+Haryana,37
+Madhya Pradesh,38
+Tamil Nadu,23
+Uttarakhand,36
+Tripura,38
+Himachal Pradesh,38
+Assam,35
+Manipur,23
+Tripura,33
+Rajasthan,21
+Meghalaya,19
+Rajasthan,21
+Madhya Pradesh,38
+Tamil Nadu,28
+Nagaland,19
+Kerala,23
+Odisha,36
+Uttar Pradesh,28
+Uttarakhand,37
+Uttar Pradesh,16
+Telangana,40
+Manipur,42
+Tamil Nadu,33
+Odisha,39
+Goa,22
+Karnataka,20
+Sikkim,40
+Manipur,28
+Maharashtra,24
+Andhra Pradesh,23
+Gujarat,22
+Karnataka,37
+Rajasthan,40
+West Bengal,23
+Himachal Pradesh,41
+Jharkhand,38
+Jharkhand,42
+Goa,31
+Assam,38
+Maharashtra,39
+Assam,35
+Nagaland,24
+Nagaland,25
+Chhattisgarh,22
+Uttar Pradesh,25
+Manipur,27
+Tamil Nadu,25
+Madhya Pradesh,23
+Gujarat,29
+Mizoram,39
+Tripura,36
+Telangana,29
+Chhattisgarh,35
+Rajasthan,40
+Madhya Pradesh,25
+Nagaland,23
+Gujarat,39
+Chhattisgarh,30
+Himachal Pradesh,19
+Uttar Pradesh,38
+Jharkhand,32
+Assam,28
+Sikkim,32
+Manipur,20
+Sikkim,34
+Tamil Nadu,19
+Himachal Pradesh,38
+Andhra Pradesh,35
+Himachal Pradesh,38
+Uttar Pradesh,32
+Mizoram,22
+Maharashtra,41
+Tamil Nadu,24
+Gujarat,24
+Himachal Pradesh,31
+Sikkim,33
+Mizoram,40
+Maharashtra,30
+Tripura,19
+West Bengal,39
+Haryana,37
+Sikkim,35
+Gujarat,33
+Maharashtra,37
+Gujarat,35
+Uttarakhand,19
+Uttarakhand,23
+Chhattisgarh,37
+Mizoram,41
+Rajasthan,31
+Arunachal Pradesh,26
+Chhattisgarh,20
+Tamil Nadu,30
+Gujarat,25
+Goa,18
+Tamil Nadu,34
+Bihar,35
+Goa,41
+Arunachal Pradesh,38
+Tripura,25
+Chhattisgarh,36
+West Bengal,21
+Karnataka,23
+Arunachal Pradesh,36
+Tamil Nadu,16
+Tripura,30
+Gujarat,21
+Kerala,24
+Rajasthan,37
+Manipur,24
+Maharashtra,25
+Maharashtra,23
+Arunachal Pradesh,25
+Uttar Pradesh,41
+Tripura,34
+Rajasthan,33
+Himachal Pradesh,33
+Tripura,21
+Maharashtra,38
+Madhya Pradesh,35
+Gujarat,36
+Chhattisgarh,20
+Uttarakhand,23
+Maharashtra,23
+Uttarakhand,38
+Karnataka,18
+Mizoram,29
+Meghalaya,27
+Uttarakhand,28
+Haryana,36
+West Bengal,26
+Himachal Pradesh,17
+Himachal Pradesh,19
+Andhra Pradesh,42
+Uttarakhand,25
+Uttarakhand,33
+Kerala,40
+Gujarat,28
+Odisha,31
+Himachal Pradesh,20
+Bihar,19
+Uttar Pradesh,33
+Telangana,32
+Rajasthan,16
+Nagaland,27
+Nagaland,20
+Nagaland,37
+Mizoram,21
+Madhya Pradesh,31
+Tamil Nadu,37
+Andhra Pradesh,27
+Chhattisgarh,17
+Kerala,16
+Rajasthan,34
+Jharkhand,31
+Karnataka,22
+Goa,38
+Goa,26
+Tripura,22
+Uttarakhand,38
+Goa,21
+Telangana,36
+Jharkhand,19
+Assam,29
+Gujarat,38
+Andhra Pradesh,29
+Maharashtra,19
+Mizoram,26
+Telangana,41
+Telangana,38
+Mizoram,41
+Tripura,22
+Karnataka,25
+Goa,40
+Manipur,36
+Bihar,29
+Chhattisgarh,25
+Meghalaya,42
+Karnataka,34
+West Bengal,26
+Chhattisgarh,21
+Rajasthan,21
+Haryana,38
+Manipur,18
+Goa,35
+Mizoram,26
+Odisha,20
+Maharashtra,26
+Gujarat,21
+Nagaland,25
+Maharashtra,25
+West Bengal,20
+Kerala,26
+Rajasthan,42
+Tamil Nadu,38
+Manipur,27
+Meghalaya,34
+Nagaland,16
+Mizoram,35
+Goa,31
+Tamil Nadu,16
+Karnataka,39
+Madhya Pradesh,31
+West Bengal,17
+Bihar,18
+Goa,37
+Andhra Pradesh,20
+West Bengal,37
+Uttar Pradesh,31
+Manipur,23
+Manipur,40
+Uttar Pradesh,30
+Madhya Pradesh,37
+Rajasthan,17
+Himachal Pradesh,23
+Chhattisgarh,40
+Karnataka,22
+Andhra Pradesh,31
+Himachal Pradesh,37
+Madhya Pradesh,23
+Madhya Pradesh,29
+Karnataka,19
+Haryana,42
+Assam,18
+Assam,18
+Haryana,42
+Manipur,25
+Nagaland,35
+Himachal Pradesh,37
+West Bengal,17
+Meghalaya,32
+Punjab,40
+Goa,39
+Bihar,30
+Andhra Pradesh,39
+Assam,34
+Maharashtra,22
+Uttarakhand,19
+Bihar,17
+Andhra Pradesh,33
+Andhra Pradesh,32
+Tamil Nadu,21
+Andhra Pradesh,31
+Punjab,29
+Gujarat,29
+Meghalaya,36
+Arunachal Pradesh,19
+Karnataka,26
+Odisha,31
+Kerala,20
+West Bengal,17
+Sikkim,28
+Goa,28
+Andhra Pradesh,28
+Jharkhand,22
+Bihar,36
+Punjab,33
+Nagaland,26
+Manipur,23
+Bihar,37
+Andhra Pradesh,16
+Manipur,36
+Madhya Pradesh,17
+Arunachal Pradesh,41
+Sikkim,37
+Nagaland,25
+Odisha,23
+West Bengal,36
+Manipur,28
+Uttarakhand,32
+Tamil Nadu,24
+Haryana,17
+Nagaland,21
+Haryana,36
+Arunachal Pradesh,30
+Gujarat,17
+Tripura,35
+Uttarakhand,32
+Nagaland,23
+Kerala,19
+Kerala,24
+Arunachal Pradesh,34
+Meghalaya,23
+Nagaland,35
+Rajasthan,23
+Nagaland,40
+Andhra Pradesh,30
+Haryana,22
+Uttarakhand,26
+Assam,20
+Assam,38
+Assam,32
+Tamil Nadu,28
+Odisha,18
+Meghalaya,32
+Gujarat,31
+Rajasthan,31
+Karnataka,18
+Uttarakhand,28
+Maharashtra,20
+Maharashtra,36
+Odisha,29
+Punjab,21
+Himachal Pradesh,31
+Assam,22
+Madhya Pradesh,24
+Mizoram,40
+Telangana,26
+Telangana,32
+Bihar,37
+Madhya Pradesh,37
+Gujarat,42
+Assam,32
+Himachal Pradesh,23
+Gujarat,41
+Gujarat,35
+Jharkhand,17
+Meghalaya,27
+Chhattisgarh,37
+Himachal Pradesh,33
+Odisha,25
+Assam,19
+Rajasthan,17
+Odisha,26
+Madhya Pradesh,22
+Punjab,37
+Sikkim,25
+Rajasthan,39
+Jharkhand,31
+Andhra Pradesh,27
+Meghalaya,38
+Meghalaya,24
+Odisha,26
+Manipur,17
+Madhya Pradesh,17
+Uttarakhand,25
+Nagaland,29
+Punjab,34
+Sikkim,35
+Kerala,34
+Bihar,38
+Andhra Pradesh,27
+Uttarakhand,42
+Himachal Pradesh,36
+Gujarat,23
+Maharashtra,33
+Arunachal Pradesh,28
+Goa,17
+Kerala,42
+Uttarakhand,39
+Chhattisgarh,16
+Madhya Pradesh,21
+Punjab,21
+Jharkhand,25
+Chhattisgarh,23
+Odisha,41
+Karnataka,20
+Kerala,24
+Telangana,37
+Uttar Pradesh,21
+Rajasthan,42
+West Bengal,17
+Mizoram,28
+Himachal Pradesh,30
+Madhya Pradesh,27
+Bihar,40
+Uttarakhand,32
+Punjab,36
+Telangana,36
+Meghalaya,41
+Jharkhand,16
+Gujarat,32
+Himachal Pradesh,24
+Andhra Pradesh,16
+Goa,37
+Haryana,28
+Punjab,23
+Nagaland,36
+Telangana,36
+Manipur,41
+Uttar Pradesh,20
+Madhya Pradesh,29
+Uttar Pradesh,22
+Himachal Pradesh,31
+Himachal Pradesh,30
+Meghalaya,16
+Haryana,42
+Arunachal Pradesh,30
+Andhra Pradesh,21
+Tamil Nadu,31
+Tamil Nadu,37
+Kerala,16
+Odisha,22
+Tamil Nadu,32
+Mizoram,37
+Nagaland,24
+Uttarakhand,34
+Bihar,20
+Meghalaya,27
+Andhra Pradesh,23
+Uttar Pradesh,41
+Arunachal Pradesh,20
+Andhra Pradesh,26
+Telangana,39
+Uttarakhand,19
+Kerala,38
+West Bengal,37
+Andhra Pradesh,29
+Rajasthan,40
+Manipur,34
+Arunachal Pradesh,27
+Jharkhand,39
+Odisha,22
+Rajasthan,19
+Tripura,36
+Nagaland,40
+Madhya Pradesh,34
+Uttarakhand,21
+Goa,41
+Jharkhand,16
+Uttarakhand,31
+Himachal Pradesh,17
+Uttar Pradesh,19
+Assam,36
+Odisha,34
+Kerala,30
+Andhra Pradesh,29
+Odisha,28
+Meghalaya,23
+Goa,28
+Uttar Pradesh,21
+Uttarakhand,31
+Tripura,26
+Maharashtra,27
+Tripura,22
+Assam,35
+West Bengal,18
+Tripura,37
+Arunachal Pradesh,30
+Tamil Nadu,29
+Punjab,30
+Rajasthan,37
+Mizoram,35
+Meghalaya,33
+Andhra Pradesh,42
+Madhya Pradesh,22
+Tripura,18
+Andhra Pradesh,37
+Telangana,41
+Goa,35
+Chhattisgarh,19
+Haryana,39
+Meghalaya,37
+Telangana,19
+Karnataka,30
+Nagaland,37
+Rajasthan,28
+Telangana,19
+Manipur,39
+Punjab,21
+Chhattisgarh,27
+Haryana,18
+Bihar,30
+Goa,20
+Uttarakhand,25
+Nagaland,32
+Meghalaya,20
+Assam,22
+Maharashtra,31
+Haryana,32
+Assam,21
+West Bengal,39
+Nagaland,31
+Telangana,28
+Madhya Pradesh,36
+Himachal Pradesh,41
+Nagaland,34
+Goa,28
+Assam,39
+Chhattisgarh,24
+Telangana,37
+Chhattisgarh,40
+Bihar,28
+Karnataka,19
+Goa,23
+Meghalaya,41
+Madhya Pradesh,36
+Manipur,29
+Andhra Pradesh,19
+Arunachal Pradesh,17
+Himachal Pradesh,40
+Maharashtra,35
+Arunachal Pradesh,23
+Uttarakhand,27
+Uttarakhand,20
+Maharashtra,23
+Goa,27
+Meghalaya,23
+Bihar,30
+Goa,22
+Karnataka,17
+Bihar,31
+Punjab,25
+Karnataka,16
+Tamil Nadu,38
+Karnataka,18
+Nagaland,17
+Bihar,34
+Chhattisgarh,24
+Mizoram,36
+Rajasthan,24
+Madhya Pradesh,16
+Madhya Pradesh,22
+Telangana,34
+Gujarat,19
+Manipur,17
+Gujarat,19
+Tripura,31
+Gujarat,40
+Rajasthan,23
+Punjab,32
+Andhra Pradesh,32
+Haryana,26
+Assam,38
+Arunachal Pradesh,16
+Madhya Pradesh,23
+Himachal Pradesh,18
+Andhra Pradesh,29
+Uttar Pradesh,31
+Mizoram,33
+Manipur,25
+Nagaland,38
+Manipur,41
+Chhattisgarh,17
+Tamil Nadu,30
+Rajasthan,39
+Andhra Pradesh,33
+Tripura,27
+Punjab,35
+Odisha,38
+Karnataka,36
+Andhra Pradesh,24
+Chhattisgarh,35
+Uttarakhand,26
+Andhra Pradesh,24
+Manipur,36
+Arunachal Pradesh,29
+Himachal Pradesh,16
+Kerala,41
+Manipur,41
+Assam,30
+Odisha,39
+Goa,18
+Telangana,24
+Jharkhand,19
+Andhra Pradesh,30
+Uttar Pradesh,20
+Goa,34
+Rajasthan,37
+Tamil Nadu,23
+Meghalaya,34
+Assam,40
+Tripura,38
+Karnataka,38
+West Bengal,16
+Uttar Pradesh,23
+Nagaland,18
+Tripura,33
+Assam,25
+Uttarakhand,35
+Uttar Pradesh,41
+Himachal Pradesh,22
+Andhra Pradesh,16
+Himachal Pradesh,39
+Madhya Pradesh,20
+Arunachal Pradesh,31
+Arunachal Pradesh,24
+Arunachal Pradesh,25
+Odisha,27
+Haryana,41
+Bihar,20
+Bihar,39
+Bihar,23
+Madhya Pradesh,37
+Chhattisgarh,29
+Tripura,36
+Goa,29
+Jharkhand,22
+Haryana,41
+Sikkim,24
+Mizoram,20
+Karnataka,41
+Mizoram,34
+Jharkhand,39
+Punjab,27
+Maharashtra,30
+Gujarat,17
+Goa,31
+Nagaland,41
+Nagaland,37
+Kerala,22
+Uttar Pradesh,16
+Tripura,16
+Sikkim,34
+Karnataka,40
+Mizoram,33
+Karnataka,24
+Rajasthan,37
+Telangana,38
+Punjab,40
+Goa,18
+Tamil Nadu,38
+Punjab,16
+Himachal Pradesh,36
+Kerala,23
+Punjab,35
+Punjab,30
+Chhattisgarh,32
+Sikkim,28
+Karnataka,28
+Tamil Nadu,21
+Sikkim,29
+Assam,16
+Rajasthan,19
+Andhra Pradesh,34
+Goa,28
+Nagaland,22
+Gujarat,30
+West Bengal,22
+Bihar,42
+Gujarat,41
+West Bengal,20
+Goa,41
+West Bengal,31
+Uttar Pradesh,24
+Telangana,32
+Meghalaya,39
+Haryana,41
+Telangana,19
+Punjab,40
+Andhra Pradesh,20
+Sikkim,37
+Manipur,39
+Telangana,36
+Odisha,20
+Uttarakhand,29
+Punjab,17
+Maharashtra,34
+Odisha,41
+Karnataka,42
+Rajasthan,42
+Sikkim,32
+Meghalaya,30
+Bihar,24
+Jharkhand,28
+Meghalaya,32
+Assam,29
+Tamil Nadu,19
+Andhra Pradesh,22
+Meghalaya,37
+Punjab,42
+Tamil Nadu,38
+Odisha,41
+Jharkhand,24
+Maharashtra,34
+Chhattisgarh,18
+Bihar,27
+Telangana,40
+Tripura,16
+Himachal Pradesh,39
+Chhattisgarh,17
+Haryana,37
+Odisha,33
+Tripura,28
+Madhya Pradesh,22
+Punjab,23
+Uttarakhand,28
+Jharkhand,31
+Jharkhand,29
+Kerala,17
+Himachal Pradesh,36
+Tripura,32
+Uttar Pradesh,38
+Mizoram,20
+Madhya Pradesh,18
+Goa,26
+Telangana,37
+Uttarakhand,20
+Kerala,19
+Rajasthan,34
+Andhra Pradesh,23
+Uttarakhand,30
+Chhattisgarh,32
+Andhra Pradesh,24
+Rajasthan,37
+Himachal Pradesh,35
+Tripura,36
+Jharkhand,32
+Assam,20
+Nagaland,40
+Sikkim,27
+Haryana,34
+Tamil Nadu,35
+Manipur,39
+Himachal Pradesh,20
+Manipur,36
+Gujarat,25
+Chhattisgarh,28
+Punjab,31
+Telangana,18
+Assam,18
+Tamil Nadu,21
+Sikkim,29
+Jharkhand,38
+Punjab,34
+Nagaland,28
+Chhattisgarh,23
+Assam,42
+Uttar Pradesh,19
+Mizoram,19
+Tripura,24
+Mizoram,17
+Goa,29
+Karnataka,39
+Chhattisgarh,22
+Maharashtra,38
+Himachal Pradesh,20
+West Bengal,39
+Karnataka,21
+West Bengal,37
+Meghalaya,23
+Goa,35
+Rajasthan,28
+Bihar,21
+Mizoram,22
+Mizoram,42
+Arunachal Pradesh,39
+Assam,34
+Rajasthan,35
+Uttar Pradesh,34
+Sikkim,36
+Maharashtra,34
+Telangana,34
+Tamil Nadu,32
+West Bengal,18
+Haryana,37
+Himachal Pradesh,39
+Madhya Pradesh,38
+Jharkhand,35
+Tamil Nadu,40
+Chhattisgarh,21
+Himachal Pradesh,18
+Chhattisgarh,34
+Meghalaya,24
+Chhattisgarh,34
+West Bengal,16
+Goa,34
+Jharkhand,18
+Uttarakhand,24
+Uttarakhand,37
+Tamil Nadu,22
+Jharkhand,23
+Manipur,41
+Goa,20
+Assam,34
+Kerala,17
+Odisha,38
+Sikkim,27
+Tripura,16
+Uttar Pradesh,21
+Tripura,27
+Tamil Nadu,33
+Goa,16
+Assam,29
+Telangana,38
+Bihar,29
+Jharkhand,32
+Chhattisgarh,30
+Sikkim,18
+Maharashtra,19
+Madhya Pradesh,22
+Nagaland,29
+Bihar,18
+Haryana,40
+Bihar,19
+Meghalaya,28
+Arunachal Pradesh,40
+Arunachal Pradesh,34
+Himachal Pradesh,23
+Maharashtra,40
+Tripura,40
+Himachal Pradesh,21
+Goa,28
+West Bengal,41
+Nagaland,36
+Telangana,22
+Maharashtra,37
+Mizoram,34
+Haryana,21
+Karnataka,23
+Andhra Pradesh,29
+Uttar Pradesh,32
+Goa,20
+Himachal Pradesh,42
+Sikkim,31
+Karnataka,20
+Odisha,29
+Mizoram,34
+Chhattisgarh,19
+Kerala,23
+Gujarat,22
+Madhya Pradesh,18
+Arunachal Pradesh,22
+Andhra Pradesh,37
+Tripura,35
+Assam,24
+Mizoram,40
+Nagaland,31
+Manipur,39
+Assam,40
+Odisha,35
+Tamil Nadu,33
+Manipur,22
+Uttar Pradesh,27
+Odisha,33
+Jharkhand,22
+Haryana,19
+Madhya Pradesh,32
+Chhattisgarh,19
+Tamil Nadu,23
+Himachal Pradesh,29
+Madhya Pradesh,39
+Manipur,32
+Sikkim,31
+Telangana,30
+Rajasthan,17
+Meghalaya,18
+Bihar,31
+Haryana,21
+Goa,23
+Andhra Pradesh,31
+Punjab,31
+Rajasthan,25
+Telangana,25
+Assam,41
+Uttarakhand,35
+Arunachal Pradesh,34
+Karnataka,23
+Himachal Pradesh,29
+Odisha,22
+Odisha,25
+Chhattisgarh,32
+Kerala,27
+Haryana,31
+Uttarakhand,27
+Assam,34
+Tamil Nadu,36
+Jharkhand,18
+Kerala,28
+Rajasthan,34
+Meghalaya,17
+Bihar,35
+Assam,22
+Rajasthan,33
+Arunachal Pradesh,33
+Kerala,40
+Telangana,24
+Manipur,19
+Odisha,33
+Bihar,21
+Haryana,39
+Karnataka,35
+Gujarat,16
+Gujarat,34
+Haryana,37
+Tripura,17
+Himachal Pradesh,21
+Nagaland,29
+Andhra Pradesh,42
+Maharashtra,16
+Assam,18
+Gujarat,27
+Mizoram,39
+Goa,29
+Maharashtra,20
+Odisha,30
+Jharkhand,16
+Manipur,32
+Kerala,22
+Punjab,24
+Uttarakhand,19
+Madhya Pradesh,38
+Tamil Nadu,42
+Goa,40
+Tripura,39
+Telangana,20
+Assam,33
+Kerala,30
+Tamil Nadu,38
+Punjab,38
+Punjab,27
+Punjab,39
+Uttarakhand,38
+Andhra Pradesh,28
+Uttar Pradesh,40
+Chhattisgarh,41
+Uttar Pradesh,20
+Gujarat,22
+Kerala,31
+Rajasthan,34
+Tripura,22
+Maharashtra,28
+Gujarat,20
+Telangana,34
+Goa,35
+Goa,17
+Nagaland,41
+Odisha,31
+Maharashtra,24
+Andhra Pradesh,34
+West Bengal,16
+Odisha,21
+Tamil Nadu,40
+Jharkhand,23
+Himachal Pradesh,30
+West Bengal,19
+Odisha,32
+Tripura,18
+Rajasthan,16
+Goa,29
+Chhattisgarh,28
+Assam,27
+Himachal Pradesh,22
+Rajasthan,20
+Manipur,39
+Chhattisgarh,30
+Himachal Pradesh,29
+Telangana,25
+Goa,40
+Chhattisgarh,16
+Bihar,36
+Karnataka,18
+Rajasthan,21
+Himachal Pradesh,27
+Mizoram,17
+Odisha,16
+Kerala,16
+Tripura,21
+Rajasthan,34
+Gujarat,42
+Assam,22
+Jharkhand,31
+Karnataka,22
+Rajasthan,32
+Mizoram,24
+Nagaland,16
+Karnataka,23
+Kerala,42
+Chhattisgarh,39
+Tamil Nadu,41
